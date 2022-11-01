@@ -1,19 +1,18 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Friends List</h1>
 
 
-<table class=table>
-  <thread>
+<table class="table table-striped table-hover table-bordered">
+  <thead class ="thead-dark">  
     <tr>
-      <th>first_name</th>
-      <th>last_name</th>
-      <th>email</th>
-      <th>phone</th>
-      <th>twitter</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Twitter</th>
       <th colspan="3"></th>
     </tr>
-  </thread>
+  </thead>
 
     <tbody>
       <% @friends.each do |friend| %>
@@ -23,13 +22,17 @@
           <td><%= friend.email %></td>
           <td><%= friend.phone %></td>
           <td><%= friend.twitter %></td>
+          <td><%= link_to 'Show', friend %> </td>
+          <td><%= link_to 'Edit', friend %> </td>
+          <%# <td><%= link_to 'Delete', friend, method: :delete, data: { confirm: 'Are you sure?' } %> 
         </tr>
-      <% end %>
+      <% end %> 
     </tbody>
   </table>
 
 
 
-<%= link_to "New friend", new_friend_path %>  
+
+<%= link_to "New friend", new_friend_path, class: "btn btn-primary" %>  
 
 <%= link_to "Back", root_path %>
