@@ -1,4 +1,4 @@
-<p style="color: green"><%= notice %></p>
+<p style="color: green">
 
 
 
@@ -24,7 +24,7 @@
           <td><%= friend.twitter %></td>
           <td><%= link_to 'Show', friend %> </td>
           <td><%= link_to 'Edit', friend %> </td>
-          <%# <td><%= link_to 'Delete', friend, method: :delete, data: { confirm: 'Are you sure?' } %> 
+          <td><%= button_to 'Delete', friend, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
       <% end %> 
     </tbody>
