@@ -23,4 +23,4 @@ Things you may want to cover:
 
 * ...
 
-* Up to 01:56:00
+* Up to 02:16:00
