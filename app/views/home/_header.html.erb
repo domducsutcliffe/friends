@@ -11,6 +11,7 @@
       <li class="nav-item">
         <%= link_to "About Us", home_about_path, class:"nav-link" %>
       </li>
+<<<<<<< HEAD
         
          <% if user_signed_in?%>
          <li class="nav-item">
@@ -33,6 +34,25 @@
               <%= link_to "Sign Up", new_user_registration_path, class:"nav-link" %>
             </li>
           <%end%>
+=======
+    <li class="nav-item">
+        <%= link_to "Sign Up", new_user_registration_path,
+      class:"nav-link"%>    
+    </li>
+    <li class="nav-item">
+        <%= link_to "Sign In", new_user_session_path,
+        class:"nav-link"%>    
+    </li>
+      <li class="nav-item">
+        <%= link_to "Sign Out", destroy_user_session_path, method: :delete,
+      class:"nav-link"%>    
+      </li>
+    <li class="nav-item">
+        <%= link_to "Edit Profile", edit_user_registration_path,
+      class:"nav-link"%>    
+    </li>
+    
+>>>>>>> bcbb73722c180d4c6559a54047401da3068053d9
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
